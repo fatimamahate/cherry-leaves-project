@@ -13,12 +13,13 @@ Farmy & Foods have been struggling with the trying to keep their cherry trees he
 ### Hypothesis and how to validate?
 
 1. Healthy leaves do not have any specks on them therefore they can be detected by the lack of specks.
-   * The average image plot will show the most which is most common. 
-   * The standard deviation plots will show the variation in the images.
+   * The average and standard deviation plot shows this. The powdery_leaves will have specks on them whereas hhe healthy leaves do not. 
 
 2. The model can be trained to a high degree of 95%.
    * Train the model (Convolutional Neural Network (CNN))
    * Loss and accuracy plots are plotted to show if there is any under or over fitting
+   * The model is successful as it has a high degree of accuracy (<99%). 
+   * The loss and accuracy plots show a normal fit.
 
 ### Map the business requirements to the Data Visualisations and ML tasks
 The CRoss Industry Standard Process for Data Mining (CRISP-DM) was used. 
