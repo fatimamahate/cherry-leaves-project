@@ -3,8 +3,8 @@ from PIL import Image
 import numpy as np
 import pandas as pd
 
-from src.data_management import download_dataframe_as_csv
-from src.machine_learning.predictive_analysis import (
+from src.data_management import download_as_csv
+from src.machine_learning.predictive_analytics import (
                                                     pred_img,
                                                     resize_in_img,
                                                     plot_pred_prob
@@ -24,7 +24,7 @@ def mildew_detector_page_body():
         accept_multiple_files=True
     )
 
-    if img_upload in not None:
+    if img_upload is not None:
         report = pd.DataFrame([])
         for img in img_upload:
             img_pil(Image.open(img))
