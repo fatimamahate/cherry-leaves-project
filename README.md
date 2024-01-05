@@ -1,7 +1,7 @@
 # Cherry Leaves Project
 View the live project [here]()
 ## Introduction
-Farmy & Foods have been struggling with the trying to keep their cherry trees healthy by preventing the spread of mildew. Therefore, they have decided on training a model using over 4000 images of healthy and diseased (containing mildew) leaves. They will be used to differentiate between the leaves. Currently, a sample must be taken and manually checked to see if the plant is diseased. This model would mean they could take a random sample and simply upload an image
+Farmy & Foods have been struggling with the trying to keep their cherry trees healthy by preventing the spread of mildew. Therefore, they have decided on training a model using over 4000 images of healthy and diseased (containing mildew) leaves. They will be used to differentiate between the leaves. Currently, a sample must be taken and manually checked to see if the plant is diseased. This model would mean they could take a random sample and simply upload an image to detect whether it is healthy or powdery.
 
 ## Plan
 
