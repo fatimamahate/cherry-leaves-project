@@ -10,6 +10,8 @@ inputs/cherry_leaves_dataset/cherry-leaves/test/healthy/*
 inputs/cherry_leaves_dataset/cherry-leaves/test/powdery_mildew/*
 jupyter_notebooks/**
 documentation/bugs/*
+outputs/v1/image_shape.pkl
+outputs/v1/class_indices.pkl
 app_pages/__pycache__
 src/__pycache__
 machine_learning/__pycache__

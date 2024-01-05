@@ -140,16 +140,15 @@ You can view the Kanban Board along with the Epics created [here](https://github
 ## Manual Testing
 | Test   |Test Expectation   | Pass/Fail   |
 |---|---|---|
-|Click on buttons   |   Buttons all work and graphs open and close when clicked on |   |
+|Click on buttons   |   Buttons all work and graphs open and close when clicked on | Pass|
 |  Select a label  | Image montage for specific label is shown   |   |
-| Click on dataset   | Taken to Kaggle  |   |
-| Upload your own image  | User gets prediction |   |
-| Upload non-image  | Error   |   |
+| Click on dataset   | Taken to Kaggle  |  Pass|
+| Upload your own image  | User gets prediction |  Pass |
+| Upload non-image  | Error   | Pass|
 | Click on download | The report can be downloaded   |   |
 | Click buttons on ML page    | Buttons all work and graphs open and close when clicked on    |   |
-| Click on README link on summary page   | Linked to README   |   |
-|   |   |   |
-|   |   |   |
+| Click on README link on summary page   | Linked to README   |   Pass|
+
 ## Credits
 ### Code
 #### split-folders
