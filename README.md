@@ -138,7 +138,18 @@ You can view the Kanban Board along with the Epics created [here](https://github
     - it could be implemented if it becomes very popular so that it is a free to use service but only people genuinely interested could use the service. 
   
 ## Manual Testing
-
+|   |   |   |
+|---|---|---|
+|   |   |   |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+|   |   |   |
 ## Credits
 ### Code
 #### split-folders
@@ -164,8 +175,6 @@ Some files had to be dropped from the repository and should have been in the git
 ![In the editing stage](./documentation/bugs/editor.JPG)
 ![Run the cell](./documentation/bugs/saved.JPG)
 
-
-
 ## Deployment
 
 ### Heroku
@@ -185,54 +194,17 @@ Some files had to be dropped from the repository and should have been in the git
 
 * Thank you to Code Institute for the Walkthrough Project (Malaria Detector) which I used for this project as well as the Streamlit calculator lessons
 
-## Codeanywhere Template Instructions
-
-Welcome,
-
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
-
-You can safely delete the Codeanywhere Template Instructions section of this README.md file,  and modify the remaining paragraphs for your own project. Please do read the Codeanywhere Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use. 
-
-## How to use this repo
-
-1. Use this template to create your GitHub project repo
-
-1. Log into <a href="https://app.codeanywhere.com/" target="_blank" rel="noreferrer">CodeAnywhere</a> with your GitHub account.
-
-1. On your Dashboard, click on the New Workspace button
-
-1. Paste in the URL you copied from GitHub earlier
-
-1. Click Create
 
 1. Wait for the workspace to open. This can take a few minutes.
 
-1. Open a new terminal and <code>pip3 install -r requirements.txt</code>
+2. Open a new terminal and <code>pip3 install -r requirements.txt</code>
 
-1. In the terminal type <code>pip3 install jupyter</code>
+3. In the terminal type <code>pip3 install jupyter</code>
 
-1. In the terminal type <code>jupyter notebook --NotebookApp.token='' --NotebookApp.password=''</code> to start the jupyter server.
-
-1. Open port 8888 preview or browser
-
-1. Open the jupyter_notebooks directory in the jupyter webpage that has opened and click on the notebook you want to open.
-
-1. Click the button Not Trusted and choose Trust.
-
-Note that the kernel says Python 3. It inherits from the workspace so it will be Python-3.8.12 as installed by our template. To confirm this you can use <code>! python --version</code> in a notebook code cell.
+4. In the terminal type <code>jupyter notebook --NotebookApp.token='' --NotebookApp.password=''</code> to start the jupyter server.
 
 
-## Cloud IDE Reminders
 
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
 
 
