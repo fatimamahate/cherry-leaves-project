@@ -138,16 +138,16 @@ You can view the Kanban Board along with the Epics created [here](https://github
     - it could be implemented if it becomes very popular so that it is a free to use service but only people genuinely interested could use the service. 
   
 ## Manual Testing
-|   |   |   |
+| Test   |Test Expectation   | Pass/Fail   |
 |---|---|---|
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
+|Click on buttons   |   Buttons all work and graphs open and close when clicked on |   |
+|  Select a label  | Image montage for specific label is shown   |   |
+| Click on dataset   | Taken to Kaggle  |   |
+| Upload your own image  | User gets prediction |   |
+| Upload non-image  | Error   |   |
+| Click on download | The report can be downloaded   |   |
+| Click buttons on ML page    | Buttons all work and graphs open and close when clicked on    |   |
+| Click on README link on summary page   | Linked to README   |   |
 |   |   |   |
 |   |   |   |
 ## Credits
