@@ -198,14 +198,6 @@ Some files had to be dropped from the repository and should have been in the git
 * Thank you to Code Institute for the Walkthrough Project (Malaria Detector) which I used for this project as well as the Streamlit calculator lessons
 
 
-1. Wait for the workspace to open. This can take a few minutes.
-
-2. Open a new terminal and <code>pip3 install -r requirements.txt</code>
-
-3. In the terminal type <code>pip3 install jupyter</code>
-
-4. In the terminal type <code>jupyter notebook --NotebookApp.token='' --NotebookApp.password=''</code> to start the jupyter server.
-
 
 
 
