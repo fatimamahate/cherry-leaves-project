@@ -104,13 +104,13 @@ You can view the Kanban Board along with the Epics created [here](https://github
 
 ### Dashboard Design
 #### Page 1 - Project Summary
-* Introduction and information
+* Introduction
 * Dataset for Project
 * Link to README
 * Business Requirements
 #### Page 2 - Visualize Leaves
 * Business Requirement 1
-  * Difference between average and standard deviation of image
+  * Difference between average and standard deviation of ima
   * Difference between diseased healthy leaves
   * Image montage
 #### Page 3 - Mildew Detector
@@ -239,12 +239,6 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 
 
 
-## Business Requirements
-
-
-
-* 1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
-* 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
 
 
