@@ -7,3 +7,4 @@ inputs/cherry_leaves_dataset/cherry-leaves/test/powdery_mildew/*
 jupyter_notebooks/**
 documentation/bugs/*
 __pycache__
+*.ipynb
