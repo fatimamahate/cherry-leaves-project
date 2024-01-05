@@ -104,22 +104,26 @@ You can view the Kanban Board along with the Epics created [here](https://github
 
 ### Dashboard Design
 #### Page 1 - Project Summary
+![Image of Project Summary](./documentation/images/summary.JPG)
 * Introduction
 * Dataset for Project
 * Link to README
 * Business Requirements
 #### Page 2 - Visualize Leaves
+![Image of Leaf Visualizer](./documentation/images/visualizer.JPG)
 * Business Requirement 1
   * Difference between average and standard deviation of ima
   * Difference between diseased healthy leaves
   * Image montage
 #### Page 3 - Mildew Detector
+![Image of detector](./documentation/images/detector.JPG)
 * Business Requirement 2
 * Download images button
 * File uploader widget to add own images for prediction
 * Table with prediction results
 * Download button to download the results
 #### Page 4 - Hypothesis/Validation
+![Image of hypothese](./documentation/images/hypothesis.JPG)
 * Project Hypothesis 1
   * Validation
 * Project Hypothesis 2
