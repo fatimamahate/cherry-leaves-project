@@ -92,7 +92,7 @@ The following User Stories were created and this is how they applied to each bus
 10. As a client, I can use the dashboard so that I can quickly and accurately tell if a tree has diseased or healthy leaves.
 11. As a engineer/client I can view the live page so that I can use it to detect mildew on leaves 
 
-You can view the Kanban Board along with the Epics created [here]()
+You can view the Kanban Board along with the Epics created [here](https://github.com/users/fatimamahate/projects/12/views/1)
 
 ### Goals
 * To increase the speed of the testing of leaves. 
@@ -102,7 +102,31 @@ You can view the Kanban Board along with the Epics created [here]()
 ## Features
 
 ### Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
+#### Page 1 - Project Summary
+* Introduction and information
+* Dataset for Project
+* Link to README
+* Business Requirements
+#### Page 2 - Visualize Leaves
+* Business Requirement 1
+  * Difference between average and standard deviation of image
+  * Difference between diseased healthy leaves
+  * Image montage
+#### Page 3 - Mildew Detector
+* Business Requirement 2
+* Download images button
+* File uploader widget to add own images for prediction
+* Table with prediction results
+* Download button to download the results
+#### Page 4 - Hypothesis/Validation
+* Project Hypothesis 1
+  * Validation
+* Project Hypothesis 2
+  * Validation
+#### Page 5 - ML Prediction
+* Labels for Train, Validation and Test Sets
+* Model History - Accuracy and Losses - underfitting and overfitting
+* Model Evaluation result 
 
 ## Features to Implement
 * Use this model for problems in other fields such as detecting cancer in the medical field.
@@ -120,6 +144,8 @@ You can view the Kanban Board along with the Epics created [here]()
 I was struggling to split my data set into Train, Validation and Test sets. Therefore, I used [this](https://stackoverflow.com/questions/57394135/split-image-dataset-into-train-test-datasets) Stack Overflow post or specifically [this answer](https://stackoverflow.com/a/63118451). I learnt how to use split-folders which was a quicker way to split your data. However, it should be noted that it is encouraged to use the longer method since this shows exactly how splitting the data works. I would recommend split-folders to anyobdy who wants to work efficiently and is using classes. The code in the specific post was edited to work with my project.
 #### Git push
 At one point early on, my code would not push to my repository. To troubleshoot, I searched the internet and found [this](https://stackoverflow.com/questions/45293263/git-updates-were-rejected-because-the-tip-of-your-current-branch-is-behind) helpful Stack Overflow post. Despite it telling you the error message and how to rectify it in my terminal, I needed some extra information. In the end, I specifically used [this answer](https://stackoverflow.com/a/74548526). I felt it was okay to use this command since I was using it early in my project. 
+#### gitignore
+Some files had to be dropped from the repository and should have been in the gitignore file. I used [this post](https://stackoverflow.com/questions/13541615/how-to-remove-files-that-are-listed-in-the-gitignore-but-still-on-the-repositor) to find a way to do this. I specifically used [this answer](https://stackoverflow.com/a/34435207) since the other answers did not work for me. 
 
 ### Content/Media
 
