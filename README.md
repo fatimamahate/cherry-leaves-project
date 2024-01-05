@@ -1,21 +1,79 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
 # Cherry Leaves Project
+View the live project [here]()
 ## Introduction
-The cherry plantation crop from Farmy & Foods is facing a challenge where their cherry plantations have been presenting powdery mildew. Currently, the process is manual verification if a given cherry tree contains powdery mildew. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. If there is powdery mildew, the employee applies a specific compound to kill the fungus. The time spent applying this compound is 1 minute.  The company has thousands of cherry trees, located on multiple farms across the country. As a result, this manual process is not scalable due to the time spent in the manual process inspection.
+Farmy & Foods have been struggling with the trying to keep their cherry trees healthy by preventing the spread of mildew. Therefore, they have decided on training a model using over 4000 images of healthy and diseased (containing mildew) leaves. They will be used to differentiate between the leaves. Currently, a sample must be taken and manually checked to see if the plant is diseased. This model would mean they could take a random sample and simply upload an image
 
-To save time in this process, the IT team suggested an ML system that detects instantly, using a leaf tree image, if it is healthy or has powdery mildew. A similar manual process is in place for other crops for detecting pests, and if this initiative is successful, there is a realistic chance to replicate this project for all other crops. The dataset is a collection of cherry leaf images provided by Farmy & Foods, taken from their crops.
+## Plan
+
+### Business Requirements
+
+1. The client is interested in having a study to visually differentiate between healthy and diseased leaves.
+2. The client is interested in telling whether a specific leaf has mildew or not.
 
 ### Hypothesis and how to validate?
 
-* By reducing the manual process of testing leaves, the client can save time using the ML model and therefore test more in a given time. 
+1. Healthy leaves do not have any specks on them therefore they can be detected by the lack of specks.
+   * The average image plot will show the most which is most common. 
+   * The standard deviation plots will show the variation in the images.
 
-### Business Requirements
-1. The client is interested in having a study to visually differentiate between healthy and diseased leaves.
-2. The client is interested in telling whether a specific leaf has mildew or not. 
+2. The model can be trained to a high degree of 95%.
+   * Train the model (Convolutional Neural Network (CNN))
+   * Loss and accuracy plots are plotted to show if there is any under or over fitting
 
-### The rationale to map the business requirements to the Data Visualisations and ML tasks
+### Map the business requirements to the Data Visualisations and ML tasks
+The CRoss Industry Standard Process for Data Mining (CRISP-DM) was used. 
 
+1. Business Understanding
+    - What does the client need?
+    - Detect the differences in the leaves
+    - Visualise the differences in the leaves
+2. Data Understanding
+    - Do we have the data?
+    - We have the correct data set using Kaggle
+3. Data Preparation
+    - How to organise the data?
+    - Split into Train, Test and Validation sets
+    - Augment data to ensure a variety of different images from different angles
+4. Modelling
+    - What model and what tehcniques are used?
+    - This is a classification model
+    - Deep learning models are used specifically Convolutional Neural Networks (convolution, polling, flatten, dense, dropout)
+5. Evaluation
+    - Is it performing correctly?
+    - Loss/Accuracy Plots will show if there is over or underfitting and is tested on this
+6. Deployment
+    - Can the customer/client view the model?
+    - Streamlit is used to display all plots and montages.
+    - Client can upload their own images.
+
+### ML Business Case
+1. Which industries will it be used for?
+    - The industries include agriculture, nature parks, biology and any amateur interests.
+2. What ML model will be used?
+    - A binary classification model can be used. Since it is a split between healthy and powdery leaves.
+    - A Convolutional Neural Network is used.
+3. Does the client need a dashboard?
+    - The client requires a dashboard.
+4. What is a successful outcome?
+    - Client will be able to see the images of healthy and powdery images
+    - Predict whether a specific leaf is healthy or powdery
+5. Is it possible to seperate the project into User Stories and Epics?
+    - Yes, see User Stories below
+6. Are there any privacy or ethical concerns?
+    - The client has intended for this open to anybody who is interested including amateur enthusiasts. 
+    - The images do not have anything regarding people. 
+7. What are the inputs and outputs?
+    - Inputs are images of leaves
+    - Outputs are a classification of the lead
+8. How will the customer benefit?
+    - The customer will be able to detect many images at once rather than manually looking at each leaf. This will save the time of the customer. 
+9. Who is the User Demographic?
+    - This project started because of farmers. However, it can be used also for the following
+      * Park Rangers
+      * Wildlife Experts
+      * Amateur Wildlife Enthusiasts
+
+### User Stories
 The following User Stories were created and this is how they applied to each business requirement. (The number represents to the User Story number)
 #### User Stories applicable to Business Requirement 1
 1. As a data collector, I can collect the images of leaves so that I can differentiate between healthy and diseased cherry leaves.
@@ -30,61 +88,56 @@ The following User Stories were created and this is how they applied to each bus
 8. As a Machine Learning Product Manager, I can design a dashboard so that I can display the data to my client as per the business requirements.
 9. As a Machine Learning Project Manager, I can develop the dashboard so that I can present the data to client.
 
-#### User Story applicable to both Business Requirements
+#### User Stories applicable to both Business Requirements
 10. As a client, I can use the dashboard so that I can quickly and accurately tell if a tree has diseased or healthy leaves.
+11. As a engineer/client I can view the live page so that I can use it to detect mildew on leaves 
 
-## ML Business Case
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+You can view the Kanban Board along with the Epics created [here]()
 
 ### Goals
 * To increase the speed of the testing of leaves. 
 * Reduce the manual process of finding specifically diseased leaves.
 * Have a higher degree of accuracy compared to manual testing. 
 
-### User Demographic
-This project started because of farmers. However, it can be used also for the following 
-* Park Rangers
-* Wildlife Experts
-* Amateur Wildlife Enthusiasts
-
 ## Features
 
-## Dashboard Design
+### Dashboard Design
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
-* Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
+
+## Features to Implement
+* Use this model for problems in other fields such as detecting cancer in the medical field.
+* Detect something which looks like mildew but is not actually
+
+## Features not implemented
+* Since the client would eventually like this to be sent to other farmers, was deemed to be not needed. 
+    - it could be implemented if it becomes very popular so that it is a free to use service but only people genuinely interested could use the service. 
   
 ## Manual Testing
-
-## Dataset Content
-
-* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
-* The dataset contains +4 thousand images taken from the client's crop fields. The images show healthy cherry leaves and cherry leaves that have powdery mildew, a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio, and the company is concerned about supplying the market with a compromised quality product.
-
 
 ## Credits
 ### Code
 #### split-folders
-I was struggling to split my data set into Train, Validation and Test sets. Therefore, I used [this](https://stackoverflow.com/questions/57394135/split-image-dataset-into-train-test-datasets) Stack Overflow post or specifically [this answer](https://stackoverflow.com/a/63118451). I learnt how to use split-folders which was a quicker way to split your data. However, it should be noted that it is encouraged to use the longer method since this shows exactly how splitting the data works. I would recommend split-folders to anyobdy who wants to work efficiently. The code in the specific post was edited to work with my project.
-
+I was struggling to split my data set into Train, Validation and Test sets. Therefore, I used [this](https://stackoverflow.com/questions/57394135/split-image-dataset-into-train-test-datasets) Stack Overflow post or specifically [this answer](https://stackoverflow.com/a/63118451). I learnt how to use split-folders which was a quicker way to split your data. However, it should be noted that it is encouraged to use the longer method since this shows exactly how splitting the data works. I would recommend split-folders to anyobdy who wants to work efficiently and is using classes. The code in the specific post was edited to work with my project.
 #### Git push
-At one point early on, my code would not push to my repository. To troubleshoot, I search the internet and found [this](https://stackoverflow.com/questions/45293263/git-updates-were-rejected-because-the-tip-of-your-current-branch-is-behind) helpful Stack Overflow post. Despite it telling you the error message and how to rectify it in my terminal, I needed some extra information. In the end, I specifically used [this answer](https://stackoverflow.com/a/74548526). I felt it was okay to use this commanc since I was using it early in my project. 
-### Content
+At one point early on, my code would not push to my repository. To troubleshoot, I searched the internet and found [this](https://stackoverflow.com/questions/45293263/git-updates-were-rejected-because-the-tip-of-your-current-branch-is-behind) helpful Stack Overflow post. Despite it telling you the error message and how to rectify it in my terminal, I needed some extra information. In the end, I specifically used [this answer](https://stackoverflow.com/a/74548526). I felt it was okay to use this command since I was using it early in my project. 
 
-* The text for the Home page was taken from Wikipedia Article A.
-* Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-* The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+### Content/Media
 
-### Media
+* The data set is from [Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves). It has over 4000 images to train, test and validate the model.
+* The project idea is from [Code Institute](https://codeinstitute.net/?nab=1) as well the template used for this project.
 
-* The photos used on the home and sign-up page are from This Open-Source site.
-* The images used for the gallery page were taken from this other open-source site.
 
 ## Main Data Analysis and Machine Learning Libraries
 
 * This model is a classification model since the client would like to classify the images into healthy and unhealthy
+
 ## Unfixed Bugs
 
-* You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+* For unknown reasons, in the 02-DataVisualize.ipynb, when running the 5th cell (beneath inputs), there is a typo for the file path. It is not seen when editing however when I press shift + enter there are 2 extra letters at the end of the file path (st). I have tried rewriting that cell in different ways, but it would always remain in some form. 
+![In the editing stage](./documentation/bugs/editor.JPG)
+![Run the cell](./documentation/bugs/saved.JPG)
+
+
 
 ## Deployment
 
