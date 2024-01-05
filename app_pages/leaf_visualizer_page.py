@@ -39,11 +39,11 @@ def leaf_visualizer_page_body():
 
     if st.checkbox("Image Montage"): 
       st.write("* To refresh the montage, click on the 'Create Montage' button")
-      my_data_dir = 'inputs/cherry_leaves_dataset/cherry-leaves'
-      labels = os.listdir(my_data_dir+ '/val')
+      data_dir = 'inputs/cherry_leaves_dataset/cherry-leaves'
+      labels = os.listdir(data_dir+ '/val')
       display_label = st.selectbox(label="Select label", options=labels, index=0)
       if st.button("Create Montage"):      
-        image_montage(dir_path= my_data_dir + '/val',
+        image_montage(dir_path= data_dir + '/val',
                       display_label=display_label,
                       nrows=8, ncols=3, figsize=(10,25))
       st.write("---")
@@ -88,12 +88,11 @@ def image_montage(dir_path, display_label, nrows, ncols, figsize=(15,10)):
     plt.tight_layout()
     
     st.pyplot(fig=fig)
-    # plt.show()
+
 
 
   else:
-    print("The label you selected doesn't exist.")
-    print(f"The existing options are: {labels}")
+    print(f"Please choose from: {labels}")
 
 
 
